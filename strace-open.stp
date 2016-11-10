@@ -1,3 +1,4 @@
+#!/usr/bin/stap
 probe syscall.open
 {
   printf ("%s(%d) open (%s)\n", execname(), pid(),argstr)
